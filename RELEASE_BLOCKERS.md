@@ -10,6 +10,10 @@ Attempts to enable TeX Live's `tagpdf` through a generated Pandoc template fail 
 generated environments, including `Shaded` and plain code-block output, with an unbalanced
 structure-stack error. The current build must not claim PDF/UA or WCAG conformance.
 
+Tested alternatives include modern `tagpdf` with XeLaTeX/LuaLaTeX and the legacy `accessibility`
+package with pdfLaTeX. They either produce `Tagged: no`, fail on Pandoc-generated environments, or
+exhaust TeX's input stack. They are not integrated into the release artifact.
+
 Required completion path:
 
 1. Create a custom Pandoc LaTeX template that initializes `\DocumentMetadata` before

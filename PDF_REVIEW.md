@@ -52,3 +52,8 @@ newly provisioned accessibility checker.
 An isolated hook test that wrapped Pandoc's `Shaded` environment in a `Code` structure produced
 the same unbalanced-structure error. This is not safe to integrate into the release build without
 mapping all generated environments and validating the resulting tag tree.
+
+Two additional local alternatives were tested: modern `tagpdf` with Pandoc's generated template
+and the legacy `accessibility` package under pdfLaTeX. The former builds only when tagging is not
+active and reports `Tagged: no`; the latter exhausts TeX's input stack in the generated paragraph
+handling. Neither is suitable for the release artifact.
