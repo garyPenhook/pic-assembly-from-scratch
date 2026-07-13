@@ -2,20 +2,20 @@ PANDOC ?= pandoc
 PDF := output/pdf/pic-assembly-from-scratch.pdf
 
 CHAPTERS := \
-	book/part1.md CH01_what_is_a_microcontroller.md CH02_pic_cores.md CH03_toolchain.md \
-	book/part2.md CH04_anatomy.md CH05_config.md CH06_moving_data.md CH07_first_blink.md \
-	book/part3.md CH08_banking.md CH09_paging.md CH10_psects.md CH11_linear_memory.md \
-	book/part4.md CH12_directives.md CH13_macros_multifile.md CH14_interrupts.md \
-	CH15_pic18_interrupts.md CH16_compiled_stack.md \
-	book/part5.md CH17_linker_map.md CH18_hex_programming.md CH19_baseline.md
+	manuscript/part1.md manuscript/CH01_what_is_a_microcontroller.md manuscript/CH02_pic_cores.md manuscript/CH03_toolchain.md \
+	manuscript/part2.md manuscript/CH04_anatomy.md manuscript/CH05_config.md manuscript/CH06_moving_data.md manuscript/CH07_first_blink.md \
+	manuscript/part3.md manuscript/CH08_banking.md manuscript/CH09_paging.md manuscript/CH10_psects.md manuscript/CH11_linear_memory.md \
+	manuscript/part4.md manuscript/CH12_directives.md manuscript/CH13_macros_multifile.md manuscript/CH14_interrupts.md \
+	manuscript/CH15_pic18_interrupts.md manuscript/CH16_compiled_stack.md \
+	manuscript/part5.md manuscript/CH17_linker_map.md manuscript/CH18_hex_programming.md manuscript/CH19_baseline.md
 
 
 APPENDICES := \
-	NAVIGATION.md \
-	APPENDIX_A_instruction_set.md APPENDIX_B_directive_reference.md \
-	APPENDIX_C_error_messages.md APPENDIX_D_options.md \
-	APPENDIX_E_mpasm_migration.md APPENDIX_F_glossary.md \
-	APPENDIX_G_assembly_to_c.md REFERENCES.md
+	manuscript/NAVIGATION.md \
+	manuscript/APPENDIX_A_instruction_set.md manuscript/APPENDIX_B_directive_reference.md \
+	manuscript/APPENDIX_C_error_messages.md manuscript/APPENDIX_D_options.md \
+	manuscript/APPENDIX_E_mpasm_migration.md manuscript/APPENDIX_F_glossary.md \
+	manuscript/APPENDIX_G_assembly_to_c.md manuscript/REFERENCES.md
 
 SOURCES := $(CHAPTERS) $(APPENDICES)
 

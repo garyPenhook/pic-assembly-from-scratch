@@ -76,11 +76,9 @@ The result is written to `output/pdf/pic-assembly-from-scratch.pdf`. The Markdow
 
 ## Repository layout
 
-- `CH*.md` — book chapters
-- `APPENDIX_*.md` — reference appendices
-- `REFERENCES.md` — resolvable source keys and bibliographic references
+- `manuscript/` — all book parts, chapters, appendices, navigation, and references
 - `PERMISSIONS_INVENTORY.md` — third-party material and reuse review register
-- `NAVIGATION.md` — chapter, appendix, and maintenance reading map
+- `manuscript/NAVIGATION.md` — chapter, appendix, and maintenance reading map
 - `VALIDATION_STATUS.md` — example and runtime-validation boundaries
 - `PDF_REVIEW.md` — latest PDF structure and visual review record
 - `RELEASE_BLOCKERS.md` — remaining accessibility and licensing gates
@@ -91,9 +89,9 @@ The result is written to `output/pdf/pic-assembly-from-scratch.pdf`. The Markdow
 
 ## Reading and maintenance navigation
 
-- Start with [Chapter 1](CH01_what_is_a_microcontroller.md), then follow the numbered chapters through [Chapter 19](CH19_baseline.md).
-- Use [Appendix A](APPENDIX_A_instruction_set.md) through [Appendix G](APPENDIX_G_assembly_to_c.md) as the reference section.
-- Check [References](REFERENCES.md) for source keys and [Validation status](VALIDATION_STATUS.md) for what has actually been verified.
+- Start with [Chapter 1](manuscript/CH01_what_is_a_microcontroller.md), then follow the numbered chapters through [Chapter 19](manuscript/CH19_baseline.md).
+- Use [Appendix A](manuscript/APPENDIX_A_instruction_set.md) through [Appendix G](manuscript/APPENDIX_G_assembly_to_c.md) as the reference section.
+- Check [References](manuscript/REFERENCES.md) for source keys and [Validation status](VALIDATION_STATUS.md) for what has actually been verified.
 - Maintainers should follow the [documentation standard](DOCUMENTATION_STANDARD.md), run `make lint`, and use the [verification workflow](verify/README.md) before publishing.
 
 ## Trademark and independence notice

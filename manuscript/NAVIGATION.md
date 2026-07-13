@@ -1,8 +1,7 @@
 # Reading map
 
-Use this map to move through the book in order or jump to a reference section. The links work in
-the Markdown repository; the PDF contents and bookmarks provide the corresponding in-document
-navigation.
+Use this map to move through the book in order or jump to a reference section. The PDF contents and
+bookmarks provide the corresponding in-document navigation.
 
 ## Main sequence
 
@@ -25,11 +24,6 @@ navigation.
 - [Appendix F — Glossary](APPENDIX_F_glossary.md)
 - [Appendix G — Assembly to C](APPENDIX_G_assembly_to_c.md)
 
-## Evidence and maintenance
+## Supporting references
 
 - [References and source keys](REFERENCES.md)
-- [Validation status](VALIDATION_STATUS.md)
-- [Verification workflow](verify/README.md)
-- [Documentation standard](DOCUMENTATION_STANDARD.md)
-- [Permissions inventory](PERMISSIONS_INVENTORY.md)
-- [PDF review record](PDF_REVIEW.md)
