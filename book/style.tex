@@ -1,0 +1,71 @@
+\usepackage[svgnames]{xcolor}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+\usepackage{fvextra}
+\usepackage{needspace}
+
+\definecolor{Ink}{HTML}{17212B}
+\definecolor{Navy}{HTML}{173B57}
+\definecolor{Teal}{HTML}{17807A}
+\definecolor{PaleBlue}{HTML}{EAF1F5}
+\definecolor{CodeBg}{HTML}{F4F6F7}
+\definecolor{RuleGray}{HTML}{CBD3D8}
+
+\setkomafont{chapter}{\color{Navy}\sffamily\bfseries\Huge}
+\setkomafont{section}{\color{Navy}\sffamily\bfseries\Large}
+\setkomafont{subsection}{\color{Teal}\sffamily\bfseries\large}
+\setkomafont{disposition}{\color{Navy}}
+\RedeclareSectionCommand[beforeskip=0pt,afterskip=1.1\baselineskip]{chapter}
+\RedeclareSectionCommand[beforeskip=1.5\baselineskip,afterskip=.55\baselineskip]{section}
+\RedeclareSectionCommand[beforeskip=1.2\baselineskip,afterskip=.45\baselineskip]{subsection}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.48em plus 0.12em minus 0.08em}
+\setlength{\emergencystretch}{2em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\sffamily\color{Navy}PIC ASSEMBLY FROM SCRATCH}
+\fancyhead[RO]{\small\sffamily\color{Navy}MPLAB XC8}
+\fancyfoot[LE,RO]{\sffamily\color{Navy}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{RuleGray}\leaders\hrule height \headrulewidth\hfill}}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\sffamily\color{Navy}\thepage}\renewcommand{\headrulewidth}{0pt}}
+
+\renewenvironment{quote}
+  {\begin{list}{}{\leftmargin=1.1em\rightmargin=0.4em}\item\relax\color{Ink}\itshape\setlength{\parskip}{0.25em}}
+  {\end{list}}
+
+\AtBeginEnvironment{longtable}{\small\renewcommand{\arraystretch}{1.18}}
+\AtBeginEnvironment{tabular}{\small\renewcommand{\arraystretch}{1.18}}
+\AtBeginDocument{%
+  \RecustomVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,breakanywhere,commandchars=\\\{\},fontsize=\small}%
+  \hypersetup{
+    pdftitle={PIC Assembly from Scratch},
+    pdfsubject={A Beginner's Guide with MPLAB XC8},
+    pdfkeywords={PIC, assembly, MPLAB XC8, PIC16F17146, embedded systems},
+    pdfcreator={Pandoc and XeLaTeX}
+  }%
+}
+
+\newcommand{\bookpart}[2]{%
+  \cleardoublepage
+  \phantomsection
+  \addcontentsline{toc}{part}{#1: #2}
+  \thispagestyle{empty}
+  \vspace*{0.22\textheight}
+  {\sffamily\color{Teal}\Large\bfseries\MakeUppercase{#1}\par}
+  \vspace{0.7em}
+  {\color{Navy}\rule{\textwidth}{1.4pt}\par}
+  \vspace{1.2em}
+  {\sffamily\color{Navy}\fontsize{30}{35}\selectfont\bfseries #2\par}
+  \vfill
+  {\color{RuleGray}\rule{0.34\textwidth}{0.8pt}\par}
+  \cleardoublepage
+}

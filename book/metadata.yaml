@@ -1,0 +1,29 @@
+---
+lang: en-US
+documentclass: scrbook
+classoption:
+  - 11pt
+  - openany
+geometry:
+  - paperwidth=7in
+  - paperheight=10in
+  - inner=0.85in
+  - outer=0.70in
+  - top=0.78in
+  - bottom=0.82in
+mainfont: DejaVu Serif
+sansfont: DejaVu Sans
+monofont: Fira Code
+monofontoptions:
+  - Scale=0.82
+colorlinks: true
+linkcolor: MidnightBlue
+urlcolor: MidnightBlue
+toccolor: black
+toc-depth: 2
+secnumdepth: 0
+header-includes:
+  - \input{book/style.tex}
+include-before:
+  - \input{book/cover.tex}
+...

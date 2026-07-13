@@ -1,0 +1,14 @@
+# Downloaded device pack (large binary; re-download from packs.download.microchip.com)
+dfp/
+# Build artifacts from the verify/ harness (keep the .S sources)
+verify/*.hex
+verify/*.map
+verify/*.lst
+verify/*.o
+verify/*.elf
+verify/*.cof
+verify/*.sym
+verify/*.sdb
+verify/*.hxl
+verify/funclist
+verify/startup.*

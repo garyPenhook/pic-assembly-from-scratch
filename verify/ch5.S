@@ -1,0 +1,39 @@
+    PROCESSOR 16F17146
+#include <xc.inc>
+    CONFIG "FEXTOSC = OFF"
+    CONFIG "RSTOSC = HFINTOSC_1MHz"
+    CONFIG "CLKOUTEN = OFF"
+    CONFIG "CSWEN = ON"
+    CONFIG "VDDAR = HI"
+    CONFIG "FCMEN = ON"
+    CONFIG "MCLRE = EXTMCLR"
+    CONFIG "PWRTS = PWRT_64"
+    CONFIG "LPBOREN = OFF"
+    CONFIG "BOREN = NSLEEP"
+    CONFIG "DACAUTOEN = OFF"
+    CONFIG "BORV = LO"
+    CONFIG "ZCD = OFF"
+    CONFIG "PPS1WAY = ON"
+    CONFIG "STVREN = ON"
+    CONFIG "WDTCPS = WDTCPS_31"
+    CONFIG "WDTE = OFF"
+    CONFIG "WDTCWS = WDTCWS_7"
+    CONFIG "WDTCCS = SC"
+    CONFIG "BBSIZE = BB512"
+    CONFIG "LVP = ON"
+    CONFIG "BBEN = OFF"
+    CONFIG "SAFEN = OFF"
+    CONFIG "WRTAPP = OFF"
+    CONFIG "WRTB = OFF"
+    CONFIG "WRTC = OFF"
+    CONFIG "WRTD = OFF"
+    CONFIG "WRTSAF = OFF"
+    CONFIG "CP = OFF"
+    CONFIG "CPD = OFF"
+    PSECT resetVec,class=CODE,delta=2
+resetVec:
+    goto main
+    PSECT code
+main:
+    goto $
+    END resetVec
