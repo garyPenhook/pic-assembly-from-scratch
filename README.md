@@ -83,6 +83,7 @@ The result is written to `output/pdf/pic-assembly-from-scratch.pdf`. The Markdow
 - `NAVIGATION.md` — chapter, appendix, and maintenance reading map
 - `VALIDATION_STATUS.md` — example and runtime-validation boundaries
 - `PDF_REVIEW.md` — latest PDF structure and visual review record
+- `RELEASE_BLOCKERS.md` — remaining accessibility and licensing gates
 - `book/` — parts, metadata, cover, and styling
 - `verify/` — small assembly examples and verification sources
 - `output/pdf/` — the current rendered book PDF

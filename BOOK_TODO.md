@@ -9,7 +9,7 @@ The technical audit in [AUDIT_REPORT.md](AUDIT_REPORT.md) found no unresolved de
 
 Implemented locally in this pass: B2 source inventory, B3 documentation standard, B4 permissions inventory, M1 targeted first-use trademark corrections and exceptions, M2 chapter/appendix reference-key declarations, M3 reproducible verification, M4 validation-status labels, M6 generated-artifact hygiene, M7 terminology decision table, M8 device/version scope boxes, M9 expected-artifact documentation, M10 supported-environment matrix, N1 title harmonization, N2 reading/navigation map, N3 glossary navigation, N4 editorial lint, N5 PDF visual review record, and a repeatable `make pdf-check` release check. `make lint` and `make verify` pass with the documented XC8/DFP paths. The PDF was rebuilt and structurally checked with `qpdf`.
 
-Still open: B1 tagged/accessibility PDF and legal/licensing review of adapted vendor-example structure. Direct quotation wording has been replaced with original paraphrases. The installed tag packages were investigated; a custom pre-document Pandoc template and real PDF/UA checks are still required. The current PDF is not being represented as PDF/UA-compliant.
+Still open: B1 tagged/accessibility PDF and legal/licensing review of adapted vendor-example structure. Direct quotation wording has been replaced with original paraphrases. `RELEASE_BLOCKERS.md` records the required completion paths; the current PDF is not being represented as PDF/UA-compliant.
 
 ## Priority definitions
 
