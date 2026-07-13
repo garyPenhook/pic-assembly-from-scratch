@@ -1,4 +1,6 @@
-# Chapter 15 — Moving Up a Core: PIC18 Interrupts
+# Chapter 15 — Moving Up a Core: PIC18® Interrupts
+
+> **Reference keys:** `[DS18Q43]`, `[ER18Q43]`, `[DFP18Q]`, `[UG]`, and `[EE]` in `REFERENCES.md`.
 
 > **What you'll learn:** how your hard-won PIC16F17146 skills transfer *up* to the current-
 > generation **PIC18-Q** family — where the instruction set is wider, data memory is easier to

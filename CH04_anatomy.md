@@ -1,5 +1,9 @@
 # Chapter 4 — Anatomy of an Assembly Source File
 
+> **Reference keys:** `[DS17146]` and `[UG]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146, enhanced mid-range core; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Examples: source- and build/link-verified; runtime not hardware-verified.
+
 > **What you'll build:** a complete, buildable PIC16F17146 assembly program whose only
 > job is to start up and spin forever in a one-line endless loop. It does nothing useful —
 > and that is exactly the point. By the end of this chapter you will recognize every single
@@ -15,7 +19,7 @@ assembly file is simpler and flatter: it is a **list of lines**, and each line i
 becomes one machine instruction; assembler pseudo-instructions, directives, and macros can emit
 zero, one, or several instructions or data bytes.
 
-The MPLAB XC8 PIC Assembler recognizes exactly five statement shapes. Everything you will
+The MPLAB® XC8 PIC® Assembler recognizes exactly five statement shapes. Everything you will
 ever write is one of these:
 
 | Shape | Looks like | Purpose |

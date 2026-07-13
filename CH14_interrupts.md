@@ -1,5 +1,9 @@
 # Chapter 14 — Interrupts on the PIC16F17146
 
+> **Reference keys:** `[DS17146]`, `[ER17146]`, `[UG]`, and `[DFP17146]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146, enhanced mid-range core; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Examples: source- and build/link-verified; simulator/hardware runtime not verified.
+
 > **What you'll build:** a blinking LED again — but this time **your main code does nothing**. A
 > hardware timer (TMR0) overflows on its own, interrupts the CPU, and a short service routine
 > toggles the LED. You'll learn how an interrupt hijacks the processor, why the PIC16F17146 saves
@@ -273,6 +277,6 @@ serviced by interrupts while `main` does higher-level work.
   program.
 
 **Next chapter:** the PIC16F17146 has a single interrupt vector and saves context for you.
-Chapter 15 moves *up* a core to **PIC18**, whose interrupt system differs — vectored/prioritized
+Chapter 15 moves *up* a core to **PIC18®**, whose interrupt system differs — vectored/prioritized
 interrupts, an expanded register set, and its own conventions — so you can carry your interrupt
 skills onto the larger 8-bit family.

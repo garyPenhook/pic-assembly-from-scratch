@@ -1,5 +1,9 @@
 # Chapter 5 — Configuration Bits & the Reset Vector
 
+> **Reference keys:** `[DS17146]`, `[ER17146]`, `[UG]`, and `[PROG171]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146, enhanced mid-range core; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Configuration claims are source-verified against DS40002343F; example: build/link-verified; hardware not tested.
+
 > **What you'll build:** `spin.S` from Chapter 4, upgraded with a proper **Configuration Word
 > block** so it will start reliably on real PIC16F17146 silicon — not just on the simulator's
 > forgiving defaults. You'll choose an oscillator, switch the watchdog off, and settle the
@@ -41,7 +45,7 @@ for the build.** Open that pack's `xc8/docs/pic_chipinfo.html`, follow the PIC16
 the page's **PIC-AS config Usage** and field tables. The block in §5.4 was assembled with XC8 4.00
 and PIC16F1xxxx_DFP **1.31.465**.
 
-A **Configuration Bits** view (MPLAB X: *Window → Target Memory Views → Configuration Bits*; in
+A **Configuration Bits** view (MPLAB® X: *Window → Target Memory Views → Configuration Bits*; in
 VS Code the MPLAB Code Configurator / project config UI serves the same role) is useful for
 exploring the choices. Depending on the IDE/project, generated output can use C's `#pragma config`
 syntax;

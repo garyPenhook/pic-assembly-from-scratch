@@ -1,4 +1,4 @@
-# Book Plan: *PIC Assembly from Scratch — A Beginner's Guide with MPLAB XC8*
+# Book Plan: *Assembly from Scratch for PIC® Microcontrollers: A Beginner's Guide with MPLAB® XC8*
 
 Target chip: **PIC16F17146** (PIC16F17126/46 family, enhanced mid-range core, 14/20-pin).
 All PIC16F17146 hardware facts are confirmed against **DS40002343F** before appearing in the
@@ -10,8 +10,8 @@ text; secondary-device facts use their exact-device data sheets, errata, and DFP
 
 | Source | Pages | Role in book |
 |---|---|---|
-| MPLAB XC8 PIC Assembler — Guide for Embedded Engineers (50002994C) | 54 | Tutorial spine / worked examples |
-| MPLAB XC8 PIC Assembler — User's Guide (DS50002974E) | 233 | Reference: driver, syntax, directives, linker, utilities, error catalog |
+| MPLAB® XC8 PIC® Assembler — Guide for Embedded Engineers (50002994C) | 54 | Tutorial spine / worked examples |
+| MPLAB® XC8 PIC® Assembler — User's Guide (DS50002974E) | 233 | Reference: driver, syntax, directives, linker, utilities, error catalog |
 | PIC16F17126/46 Data Sheet (DS40002343F) | 723 | Authoritative source for every register/pin/config/peripheral fact |
 
 Verified target-chip facts (from DS40002343F, pp. 3–4):

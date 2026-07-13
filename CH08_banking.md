@@ -1,5 +1,9 @@
 # Chapter 8 — Data Memory & Banking
 
+> **Reference keys:** `[DS17146]`, `[UG]`, and `[DFP17146]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146, enhanced mid-range core; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Examples: source- and build/link-verified; runtime not hardware-verified.
+
 > **What you'll build:** the same blinking LED as Chapter 7 — but this time with the training
 > wheels off. You'll replace the `--fixupoverflow` linker crutch with the *real* `BANKSEL` and
 > `BANKMASK` you write yourself, and you'll finally understand what every one of those lines has
@@ -75,7 +79,7 @@ BSR," data sheet §41). But you rarely write it by hand. Instead you use the ass
 ```
 
 `BANKSEL TRISC` asks the linker "which bank is `TRISC` in?" and generates the instruction to load
-BSR with that number (User's Guide §4.1.2 — on enhanced mid-range and PIC18 devices it expands to
+BSR with that number (User's Guide §4.1.2 — on enhanced mid-range and PIC18® devices it expands to
 a single `movlb`). You get portability for free: move to a chip where `TRISC` lives elsewhere and
 `BANKSEL` still emits the right thing.
 

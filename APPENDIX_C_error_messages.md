@@ -1,5 +1,7 @@
 # Appendix C — Decoding Error & Warning Messages
 
+> **Reference keys:** `[UG]` and `[RN400]` in `REFERENCES.md`.
+
 Every chapter's "common mistakes" table points here. This appendix teaches you to **read** the
 assembler's messages, **look them up**, and fix the fifteen problems that trip up beginners most.
 Learning to decode errors is not a side skill — it's half of writing assembly.
@@ -8,7 +10,7 @@ Learning to decode errors is not a side skill — it's half of writing assembly.
 
 ## C.1 How to read a message
 
-The MPLAB XC8 assembler prints each message in a fixed shape (User's Guide §8):
+The MPLAB® XC8 assembler prints each message in a fixed shape (User's Guide §8):
 
 ```
 (1507) asmopt state popped when there was no pushed state (Assembler)

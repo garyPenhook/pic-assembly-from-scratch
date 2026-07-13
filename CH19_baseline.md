@@ -1,5 +1,7 @@
 # Chapter 19 — Baseline and Enhanced-Baseline Devices (Optional Finale)
 
+> **Reference keys:** `[DS10]`, `[DS570]`, `[UG]`, `[EE]`, `[DFP18Q]`, and `[DFP17146]` in `REFERENCES.md`.
+
 > **What you'll learn:** how your skills scale *down* to the 12-bit PIC cores. We distinguish
 > plain baseline **PIC12** (the PIC10F200, with no interrupt controller), enhanced baseline
 > **PIC12E**, and interrupt-capable enhanced baseline **PIC12IE** (the PIC16F570 used in the

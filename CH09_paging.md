@@ -1,5 +1,9 @@
 # Chapter 9 — Program Memory & Paging
 
+> **Reference keys:** `[DS17146]` and `[UG]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146, enhanced mid-range core; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Examples: source- and build/link-verified; runtime not hardware-verified.
+
 > **What you'll build:** a program that deliberately puts a subroutine in a *different page* of
 > program memory and calls it correctly across the boundary. You'll see the exact failure that
 > happens when you ignore paging, and the two clean ways to fix it — `PAGESEL` and the `fcall`

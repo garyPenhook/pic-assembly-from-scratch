@@ -1,5 +1,9 @@
 # Chapter 7 — Your First Blink
 
+> **Reference keys:** `[DS17146]`, `[CNANO]`, and `[UG]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146 Curiosity Nano; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Example: source- and build/link-verified; bench blink not yet hardware-verified.
+
 > **What you'll build:** the "hello, world" of hardware — a physically blinking LED on the
 > PIC16F17146 Curiosity Nano. You'll configure a real pin, drive it, and add a delay so your
 > eye can see it. This is the chapter where the chip finally *does something in the world*.
@@ -232,7 +236,7 @@ pic-as -mcpu=16f17146 -mdfp="$DFP" -Wl,-presetVec=0h \
 
 **On the Curiosity Nano:** create the project for **PIC16F17146** (Chapter 3), add `blink.S` with
 the same DFP and the `-presetVec=0h` linker option, build (**Ctrl+Shift+B**), and program the board
-over USB via the MPLAB Debugger (Chapter 18). The yellow LED0 should complete one on/off cycle
+over USB via the MPLAB® Debugger (Chapter 18). The yellow LED0 should complete one on/off cycle
 about every 1.57 seconds.
 
 **On the simulator (no board):** run to the loop, put a Watch on `LATC`, and step — you'll see

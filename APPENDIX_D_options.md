@@ -1,4 +1,6 @@
-# Appendix D — MPLAB X & `pic-as` Option Reference
+# Appendix D — MPLAB® X & `pic-as` Option Reference
+
+> **Reference keys:** `[UG]`, `[MPLABX]`, and `[RN400]` in `REFERENCES.md`.
 
 The command-line driver is **`pic-as`**, and MPLAB X issues these same options for you based on
 Project Properties (User's Guide §3, §3.4). Options are **case-sensitive** and start with a dash

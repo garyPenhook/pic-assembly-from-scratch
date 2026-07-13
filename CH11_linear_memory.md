@@ -1,5 +1,9 @@
 # Chapter 11 — Linear Memory & Larger Variables
 
+> **Reference keys:** `[DS17146]` and `[UG]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146, enhanced mid-range core; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Examples: source- and build/link-verified; runtime not hardware-verified.
+
 > **What you'll build:** a **16-bit counter** — a variable too big for one 8-bit register — that
 > counts from 0 all the way to 65535 and rolls over, incrementing correctly across the byte
 > boundary. Then you'll meet the **FSR/INDF** indirect-addressing machinery and the **linear

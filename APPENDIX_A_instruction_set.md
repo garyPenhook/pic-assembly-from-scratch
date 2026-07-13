@@ -1,5 +1,7 @@
 # Appendix A — Instruction Set Quick Reference
 
+> **Reference keys:** `[DS17146]`, `[DS18Q43]`, `[DS570]`, `[DS10]`, and `[UG]` in `REFERENCES.md`.
+
 This appendix gives the complete **50-instruction PIC16F17146** quick card, then compact delta
 cards for the plain-baseline PIC10F200, enhanced-baseline PIC16F570, and PIC18F57Q43. The exact
 device data sheet remains authoritative for encodings and device-specific extensions.
@@ -144,7 +146,7 @@ These cards highlight what changes; they are not substitutes for the full instru
 |---|---|---|
 | Plain baseline `PIC12`: PIC10F200 | 33 single-word, 12-bit instructions | two-level return stack; `RETLW` is the return form; no `RETURN`, `RETFIE`, `MOVLB`, or interrupt controller |
 | Enhanced baseline `PIC12IE`: PIC16F570 | 36 single-word, 12-bit instructions | adds `MOVLB`, `RETURN`, and `RETFIE`; four-level return stack and interrupt support |
-| PIC18: PIC18F57Q43 | standard 16-bit PIC18 set plus device extensions | explicit access operand `,c`/`,a` vs `,b`; `MOVFF`/`MOVFFL`, `LFSR`, multiply, conditional branches, `PUSH`/`POP`, table read/write, fast `CALL`/`RETURN`/`RETFIE` modes |
+| PIC18®: PIC18F57Q43 | standard 16-bit PIC18® set plus device extensions | explicit access operand `,c`/`,a` vs `,b`; `MOVFF`/`MOVFFL`, `LFSR`, multiply, conditional branches, `PUSH`/`POP`, table read/write, fast `CALL`/`RETURN`/`RETFIE` modes |
 
 Transfer rules also change: baseline `CALL` and PCL-modifying instructions can enter only the
 first 256 words of a 512-word page (Chapter 19); enhanced mid-range `CALL`/`GOTO` use PCLATH and

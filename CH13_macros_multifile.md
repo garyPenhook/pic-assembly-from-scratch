@@ -1,5 +1,9 @@
 # Chapter 13 — Macros & Multiple Source Files
 
+> **Reference keys:** `[UG]`, `[EE]`, and `[DFP17146]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146, enhanced mid-range core; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Examples: source- and build/link-verified; runtime not hardware-verified.
+
 > **What you'll build:** the Chapter 7 blink again — but split across **two source files** with a
 > **shared macro library**. A reusable `delay` routine lives in its own file and is linked in; a
 > pin-setup macro lives in an include file any source module can share. You'll learn the two distinct
@@ -189,7 +193,7 @@ pulled in by `#include`, not linked.)
 
 ### Multi-step — assemble once, link once (incremental builds)
 For bigger projects you assemble each file to an object (`.o`) with `-c`, then link the objects
-(User's Guide §3.2). A make utility (or MPLAB X) then only re-assembles files that changed:
+(User's Guide §3.2). A make utility (or MPLAB® X) then only re-assembles files that changed:
 
 ```
 pic-as -mcpu=16f17146 -mdfp=/path/to/PIC16F1xxxx_DFP/VERSION/xc8 -c main.S   # -> main.o

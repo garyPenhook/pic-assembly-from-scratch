@@ -1,5 +1,9 @@
 # Chapter 12 — Directives You'll Actually Use
 
+> **Reference keys:** `[DS17146]`, `[UG]`, and `[DFP17146]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146, enhanced mid-range core; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Examples: source- and build/link-verified; runtime not hardware-verified.
+
 > **What you'll build:** a program with a **`DB` lookup table** — a table of squares baked into
 > program memory — that you read back by index at run time. Along the way you'll pick up the
 > everyday directives that make assembly readable and adaptable: named constants (`EQU`/`SET`),
@@ -84,7 +88,7 @@ Two facts that trip people up (both from §4.9.9):
 - **On mid-range, a `DB` byte costs a whole word.** Program memory here is 14 bits wide
   (`delta=2`), so `DB 'X',1,2` stores each byte in the *low* 8 bits of a word with the upper byte
   zeroed — the HEX shows `0058 0001 0002`. You get one program word per byte. That's normal;
-  just don't expect bytes to pack two-per-word like they would on a PIC18.
+  just don't expect bytes to pack two-per-word like they would on a PIC18® device.
 - **`DB`/`DW` can't make RAM variables.** "The DB directive cannot be used to create objects in
   data memory. For that, use the DS directive" (§4.9.9). `DB` is for *constants in flash*; `DS`
   is for *variables in RAM*.

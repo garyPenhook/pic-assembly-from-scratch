@@ -12,3 +12,25 @@ verify/*.sdb
 verify/*.hxl
 verify/funclist
 verify/startup.*
+
+# Additional compiler/linker intermediates and local verification output
+verify/*.i
+verify/*.d
+verify/*.cmf
+verify/*.rlf
+verify/*.build.log
+verify/*.cod
+verify/*.cpr
+verify/*.var
+verify/*.occ
+verify/*.fcs
+verify/*.cof
+
+# Local build/render scratch and downloaded reference material
+tmp/
+tools/mdb-libs/
+docs/microchip/*.pdf
+docs/microchip/dfp/
+*.atpack
+/*.pdf
+verify/verify-summary.tsv

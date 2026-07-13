@@ -1,5 +1,7 @@
 # Chapter 1 — What Is a Microcontroller?
 
+> **Reference keys:** `[DS17146]` and `[UG]` in `REFERENCES.md`.
+
 > **What you'll take away:** a clear mental picture of what's actually inside the chip you're
 > about to program — the CPU, the two kinds of memory, the working register, and the idea of an
 > instruction set. No code yet; this chapter builds the map you'll navigate for the rest of the
@@ -29,7 +31,7 @@ that reaches out and touches the physical world.
 
 ## 1.2 Two separate memories: the Harvard design
 
-Here's the first idea that shapes *everything* in PIC assembly. On a PIC, **program memory and data
+Here's the first idea that shapes *everything* in PIC® assembly. On a PIC® microcontroller, **program memory and data
 memory are physically separate**, on their own buses. The data sheet states it plainly (§9):
 
 > "In Harvard architecture devices, the data and program memories use separate buses that allow for

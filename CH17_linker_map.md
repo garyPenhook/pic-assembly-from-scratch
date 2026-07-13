@@ -1,5 +1,9 @@
 # Chapter 17 — The Linker & Map Files
 
+> **Reference keys:** `[UG]`, `[DS17146]`, and `[DFP17146]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146, enhanced mid-range core; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Map examples: source- and build/link-verified; runtime not hardware-verified.
+
 > **What you'll build:** nothing new to run — instead you'll finally *read* the **map file** the
 > linker has been quietly producing since Chapter 4. You'll open your blink's map, find where
 > every psect and symbol landed, spot the free memory that's left, and learn to diagnose "won't
@@ -32,7 +36,7 @@ pic-as -mcpu=16f17146 -mdfp=/path/to/Microchip.PIC16F1xxxx_DFP/1.31.465/xc8 \
   -Wl,-presetVec=0h -Wl,-Map=blink.map blink.S
 ```
 
-In MPLAB X a map file is produced **by default** (User's Guide §6.3.1). Two useful facts from that
+In MPLAB® X a map file is produced **by default** (User's Guide §6.3.1). Two useful facts from that
 section:
 
 - The map is written **by the linker**, so if the build stops before linking (e.g. an assembly

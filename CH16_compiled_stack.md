@@ -1,7 +1,11 @@
 # Chapter 16 — The Compiled Stack
 
+> **Reference keys:** `[UG]`, `[EE]`, `[DS17146]`, `[DS18Q43]`, and `[CUG]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146 and PIC18F57Q43 examples; XC8 4.00 with PIC16F1xxxx DFP 1.31.465 and PIC18F-Q DFP 1.30.487. Examples: source- and build/link-verified; runtime not hardware-verified.
+
 > **What you'll learn:** how assembly routines get **local variables** — the assembly equivalent
-> of a C function's `auto` and parameter variables — even though a PIC has no hardware data stack.
+> of a C function's `auto` and parameter variables — even though a PIC® microcontroller has no hardware data stack.
 > You'll meet the **compiled stack**: memory the *linker* hands out and cleverly **reuses** across
 > routines that never run at the same time. This is how large assembly programs keep their RAM
 > footprint small without dangerous manual sharing.
@@ -64,7 +68,8 @@ blocks wherever the graph proves it's safe** (Emb Eng §6.2).
 
 ## 16.3 A worked example
 
-Here's the heart of Microchip's compiled-stack example (Emb Eng §6) — a `main` that repeatedly
+The following is an independently written adaptation of the compiled-stack pattern described in
+the reference (Emb Eng §6) — a `main` that repeatedly
 calls `add(a,b)` and `incr(val,amount)`. It's PIC18 (note `movff`, `,c` access operands from
 Chapter 15) — built and verified here on a **PIC18F57Q43** — but the *stack concepts* are identical
 on every core.
@@ -148,13 +153,13 @@ This tiny listing is the whole point of the chapter:
 - **A `*`** marks a *critical-path* node — memory at a unique location that adds to total RAM.
   Un-starred routines' blocks fully overlap others and cost **zero** extra RAM.
 
-The payoff, in Microchip's words (Emb Eng §6.2): the program needed **10 bytes** of locals but the
-linker allocated only **8** — 2 bytes reused — "without the programmer having to employ the
-dangerous practice of sharing objects between routines." In the verified Q43 map, the call-graph
+The measured payoff in this example (compare Emb Eng §6.2) is **10 bytes** of logical locals with
+only **8** bytes allocated — 2 bytes reused. That reuse is linker-proven from the call graph, not
+manual sharing between routines. In the verified Q43 map, the call-graph
 offsets are 0 and 4, while the corresponding physical
 symbols are `?au_main = 0x500` and `?pa_add = ?pa_incr = 0x504` because `udata_acs` was placed in
-the Q43 `COMRAM` class. No special build option turns stack analysis on: "a compiled stack is automatically created if FN-type
-directives are detected" (Emb Eng §6.3).
+the Q43 `COMRAM` class. No special build option is required when the linker detects the `FN`-type
+directives (Emb Eng §6.3).
 
 ---
 

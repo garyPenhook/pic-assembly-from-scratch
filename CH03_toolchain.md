@@ -1,12 +1,14 @@
 # Chapter 3 — Installing the Toolchain
 
-> **What you'll build:** a working development setup — **VS Code** with the **MPLAB Extension
-> Pack**, the **MPLAB XC8** assembler, and the **Device Family Pack** for the PIC16F17146 — and an
-> empty project that *builds cleanly*. No hardware required: you'll run it on the **simulator** via
-> the MPLAB Debugger. By the end you have a green build and are ready to write real code in Part II.
+> **Reference keys:** `[UG]`, `[EE]`, `[RN400]`, `[DFP17146]`, `[MPLABX]`, and `[CUG]` in `REFERENCES.md`.
 
-> **Which tools?** Microchip now delivers its 8-bit workflow as **MPLAB Extensions for Visual
-> Studio Code** (its modern, recommended path), alongside the older **MPLAB X IDE**. This book uses
+> **What you'll build:** a working development setup — **VS Code** with the **MPLAB® Extension
+> Pack**, the **MPLAB® XC8** assembler, and the **Device Family Pack** for the PIC16F17146 — and an
+> empty project that *builds cleanly*. No hardware required: you'll run it on the **simulator** via
+> the MPLAB® Debugger. By the end you have a green build and are ready to write real code in Part II.
+
+> **Which tools?** Microchip now delivers its 8-bit workflow as **MPLAB® Extensions for Visual
+> Studio Code** (its modern, recommended path), alongside the older **MPLAB® X IDE**. This book uses
 > the **VS Code** workflow for the GUI steps and a **command-line `pic-as`** invocation for every
 > code listing (so each example is exactly reproducible in any terminal). If you prefer MPLAB X IDE,
 > a short mapping is in §3.8 — the concepts are identical.
@@ -24,7 +26,7 @@ Four things turn your typing into a program on a chip:
    the VS Code **Marketplace**: open Extensions (**Ctrl+Shift+X**), search *MPLAB Extension Pack*,
    and install (verified: Microchip developerhelp, "Get Started for MPLAB X IDE Users New to VS
    Code").
-3. **MPLAB XC8** — the compiler package that includes the **PIC assembler**, whose command-line
+3. **MPLAB® XC8** — the compiler package that includes the **PIC® assembler**, whose command-line
    driver is **`pic-as`** (User's Guide §3). This is the tool that turns your `.S` files into a HEX
    file; the extensions call it for you.
 4. **The Device Family Pack (DFP)** — a package that teaches the tools your specific chip's

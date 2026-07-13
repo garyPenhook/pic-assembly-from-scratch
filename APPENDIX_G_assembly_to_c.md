@@ -1,7 +1,9 @@
 # Appendix G — From Assembly to C
 
+> **Reference keys:** `[CUG]`, `[UG]`, and `[DS17146]` in `REFERENCES.md`.
+
 You've learned to program the PIC16F17146 in pure assembly — the deepest way to understand a chip.
-In practice, most production firmware is written in **C** (with the MPLAB XC8 C compiler), dropping
+In practice, most production firmware is written in **C** (with the MPLAB® XC8 C compiler), dropping
 to assembly only where it's genuinely needed. This appendix shows how your assembly knowledge fits
 into a C world, so you can move fluidly between them.
 

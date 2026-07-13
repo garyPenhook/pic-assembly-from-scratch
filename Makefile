@@ -9,24 +9,35 @@ CHAPTERS := \
 	CH15_pic18_interrupts.md CH16_compiled_stack.md \
 	book/part5.md CH17_linker_map.md CH18_hex_programming.md CH19_baseline.md
 
+
 APPENDICES := \
+	NAVIGATION.md \
 	APPENDIX_A_instruction_set.md APPENDIX_B_directive_reference.md \
 	APPENDIX_C_error_messages.md APPENDIX_D_options.md \
 	APPENDIX_E_mpasm_migration.md APPENDIX_F_glossary.md \
-	APPENDIX_G_assembly_to_c.md
+	APPENDIX_G_assembly_to_c.md REFERENCES.md
 
 SOURCES := $(CHAPTERS) $(APPENDICES)
 
-.PHONY: all pdf clean
+.PHONY: all pdf pdf-check lint verify clean
 all: pdf
 
 pdf: $(PDF)
+
+pdf-check: $(PDF)
+	bash tools/check_pdf.sh
 
 $(PDF): $(SOURCES) book/metadata.yaml book/style.tex book/cover.tex
 	mkdir -p output/pdf tmp/pdfs
 	$(PANDOC) --metadata-file=book/metadata.yaml --from=markdown+smart \
 		--pdf-engine=xelatex --toc --syntax-highlighting=tango \
 		--top-level-division=chapter --output=$@ $(SOURCES)
+
+lint:
+	bash tools/lint_book.sh
+
+verify:
+	bash tools/verify_examples.sh
 
 clean:
 	rm -rf tmp/pdfs

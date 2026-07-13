@@ -1,5 +1,7 @@
 # Appendix B — Directive Reference Card
 
+> **Reference keys:** `[UG]`, `[DS17146]`, and `[DFP17146]` in `REFERENCES.md`.
+
 Directives are orders to the **assembler**, not CPU opcodes. `BANKSEL`, `BANKISEL`, and
 `PAGESEL` can generate instructions; `DB`/`DW`/`DQW` generate initialized data; `DS` reserves
 storage; many others only control assembly or linking (User's Guide §4.9). `#include` is a C
@@ -45,7 +47,7 @@ the `END` directive already shown above.
 
 **Messages & build control:** `ERROR` (halt with a message), `MESSG` (advisory message),
 `WARN` (warning), `ERRORLEVEL` (enable/disable message numbers), `RADIX` (default number base),
-`ASMOPT` (optimizer control — no effect in the PIC assembler).
+`ASMOPT` (optimizer control — no effect in the PIC® assembler).
 
 **Repetition:** `REPT` (repeat n times), `IRP` (repeat per list item), `IRPC` (repeat per
 character).

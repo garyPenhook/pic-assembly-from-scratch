@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Book Documentation"
+  short_description: "Build accurate, polished technical books"
+  default_prompt: "Use $technical-book-documentation to review or develop this technical book to professional documentation standards."

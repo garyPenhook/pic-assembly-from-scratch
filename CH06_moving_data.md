@@ -1,5 +1,9 @@
 # Chapter 6 — Moving Data: W, Literals, and File Registers
 
+> **Reference keys:** `[DS17146]` and `[UG]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146, enhanced mid-range core; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Example: source- and build/link-verified; simulator/hardware runtime not verified.
+
 > **What you'll build:** a tiny program that loads a number, stashes it in a memory location,
 > clears its working copy, then reads the number back — and you'll *watch each value move* in
 > the simulator's Watch window. No blinking yet; this is the chapter where "data" stops being
@@ -16,7 +20,7 @@ register. You load a value into W, the ALU operates using W, and an instruction 
 result in W or back in a file register.
 
 This is the mental shift from high-level languages. In C you write `x = a + b` and the compiler
-finds registers for you. In PIC assembly *you* are the compiler: to add two numbers you load
+finds registers for you. In PIC® assembly *you* are the compiler: to add two numbers you load
 one into W, then add the other to W. W is the crossing point that almost all data traffic must
 go through. Get comfortable with it and the rest of the instruction set falls into place.
 
@@ -78,8 +82,8 @@ Two facts from that table matter enormously right now:
 
 ## 6.4 The three instructions you need today
 
-All three appear verbatim in Microchip's own examples (data sheet §9.1.1; User's Guide §4.1),
-so these are the real mnemonics, not simplifications:
+These are the documented instruction forms used by the device and assembler (data sheet §9.1.1;
+User's Guide §4.1), not teaching-language simplifications:
 
 | Instruction | Meaning | Example |
 |---|---|---|

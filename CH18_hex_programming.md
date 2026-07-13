@@ -1,5 +1,9 @@
 # Chapter 18 — Utilities, Hex Files & Programming the Chip
 
+> **Reference keys:** `[UG]`, `[HEX]`, `[PROG171]`, `[CNANO]`, and `[DS17146]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146 Curiosity Nano; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. HEX examples: source- and build/link-verified; programming and LED behavior not hardware-verified.
+
 > **What you'll build:** the finish line. You'll take the timer-blink from Chapter 14, understand
 > the **HEX file** the build produces, meet the **Hexmate** utility, and then actually **program
 > the PIC16F17146** so your assembly runs on real silicon and blinks a real LED. Everything so far
@@ -87,7 +91,7 @@ no separate programmer needed (CNANO guide §3.1). There are two ways to flash y
 
 ### Method 1 — from your IDE (the normal way)
 1. Plug the board in over USB; the on-board debugger enumerates automatically.
-2. **VS Code:** run **`Debug: Add Configuration` → MPLAB Debugger** (Chapter 3), select the
+2. **VS Code:** run **`Debug: Add Configuration` → MPLAB® Debugger** (Chapter 3), select the
    connected Curiosity Nano as the tool, and start a session — programming happens as the session
    launches. *(MPLAB X IDE: press **Make and Program Device**.)*
 3. The tool assembles, links, and writes the HEX to the chip.

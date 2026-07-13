@@ -1,5 +1,9 @@
 # Chapter 10 — Psects: Organizing Code & Data
 
+> **Reference keys:** `[DS17146]`, `[UG]`, and `[DFP17146]` in `REFERENCES.md`.
+
+> **Scope and validation:** PIC16F17146, enhanced mid-range core; XC8 4.00 with PIC16F1xxxx DFP 1.31.465. Examples: source- and build/link-verified; runtime not hardware-verified.
+
 > **What you'll build:** nothing new *runs* — instead you'll finally *understand* the line
 > you've typed in every program. You'll define your own custom psects for code and data, build,
 > then open the **map file** and watch the linker turn your named sections into real addresses.
@@ -11,7 +15,7 @@
 
 You never told the assembler "put this instruction at address 0x0123." You wrote a **psect** — a
 named container — dropped code or data into it, and let the **linker** decide the final address.
-That indirection is the heart of how PIC assembly is organized, and it's why your programs are
+That indirection is the heart of how PIC® assembly is organized, and it's why your programs are
 *relocatable*: you name where things belong *categorically* ("this is code," "this is a bank-0
 variable"), and the linker resolves the actual numbers.
 
@@ -46,7 +50,7 @@ beginner work you need exactly four of them. Here they are, each verified agains
 | `class=` | which **linker class** (memory range) the psect goes in | e.g. `CODE` for program memory, `COMMON` for common RAM (§4.9.48.3) |
 | `delta=` | **bytes per address** | program memory is word-addressable → **`delta=2`**; data memory is byte-addressable → `delta=1` (the default) (§4.9.48.4) |
 | `space=` | which **memory space** when addresses overlap | **0 = program** memory, 1 = data memory (§4.9.48.18) |
-| `reloc=` | **alignment** boundary | default `1` on mid-range (no alignment needed); PIC18 code needs `2` (§4.9.48.16) |
+| `reloc=` | **alignment** boundary | default `1` on mid-range (no alignment needed); PIC18® code needs `2` (§4.9.48.16) |
 
 ### `class=` — *which* memory
 A **class** is a named range of addresses the linker can place a psect into. `class=CODE` means

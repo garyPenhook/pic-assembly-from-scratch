@@ -1,7 +1,9 @@
-# Chapter 2 — Meet the PIC Cores
+# Chapter 2 — Meet the PIC® Core Families
+
+> **Reference keys:** `[DS17146]`, `[UG]`, `[DS18Q43]`, `[DS570]`, and `[DS10]` in `REFERENCES.md`.
 
 > **What you'll take away:** a map of the 8-bit PIC family — **baseline**, **enhanced baseline**,
-> **mid-range**, **enhanced mid-range**, and **PIC18** — so you know exactly where our
+> **mid-range**, **enhanced mid-range**, and **PIC18®** — so you know exactly where our
 > PIC16F17146 sits and what you're learning that transfers to every other PIC. Knowing the cores
 > tells you which chapters of this book apply to which chips.
 

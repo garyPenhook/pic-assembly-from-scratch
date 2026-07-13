@@ -1,4 +1,6 @@
-# Appendix E — MPASM → XC8 Migration Notes
+# Appendix E — MPASM™ → XC8 Migration Notes
+
+> **Reference keys:** `[MIGRATE]`, `[UG]`, and `[EE]` in `REFERENCES.md`.
 
 If you have older PIC assembly written for **MPASM** (Microchip's legacy assembler), it won't build
 as-is under the MPLAB XC8 PIC assembler (`pic-as`) — the syntax differs in several places. This
